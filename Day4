@@ -1,1 +1,74 @@
+//function to print odd numbers from 1 to 25
+function printOddNumbers()
+{
+let i=1;
+for(i=1;i<=25;i++)
+{
+    if(i%2==1)
+    {
+        console.log(i);
+    }
+}
+}
+printOddNumbers();
+
+
+function printLastWordLength(input)
+{
+    let trimmedInput = input.trim();
+let splitArray = trimmedInput.split(" ");
+let i=splitArray.length; 
+console.log("Last Word length is:",splitArray[i-1].length);     
+}
+
+ printLastWordLength("Hello World") 
+ printLastWordLength(" fly me to the moon ") 
+
+ //function to check anagram
+
+ function isAnagram(str1,str2)
+ {
+        sortStr1 = str1.trim().toLowerCase().split("").sort().join("");
+        sortStr2 = str2.trim().toLowerCase().split("").sort().join("");
+        if(sortStr1 == sortStr2)
+        {
+            console.log(`The given ${str1} and ${str2} are Anagram`);
+        }
+        else
+        {
+            console.log(`The given ${str1} and ${str2} are not Anagram`);
+        }
+    }
+  
+    isAnagram("lisTen","sIlent")
+    isAnagram("hello","World")
+    
+
+
+//function to check if the given word is a Palindrome
+function isPalindrome(word)
+{
+var reverseWord='';
+var wordArray = word.split("");
+var i=wordArray.length;
+for(i=wordArray.length-1;i>=0;i--)
+{
+    reverseWord=reverseWord +wordArray[i];
+}
+
+if (word === reverseWord)
+{
+    
+    return true;
+}
+else
+{
+    return false;
+}
+}
+
+console.log(isPalindrome("madam"))
+console.log(isPalindrome("hello"))
+
+
 
