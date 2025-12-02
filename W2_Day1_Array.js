@@ -13,4 +13,5 @@ if (nums[k] == input)
 return j;
 }
 
-console.log('No of time input appeared is  ' , funoccurrences(3));
+console.log('No of times input appeared is  ' , funoccurrences(2));
+console.log('No of times input appeared is  ' , funoccurrences(5));
